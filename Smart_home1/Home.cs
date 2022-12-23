@@ -44,7 +44,7 @@ namespace Smart_home1
 
         private void Ajouter_Click(object sender, EventArgs e)
         {
-            PictureBox.Show(pictureBox1);
+            
         }
     }
 }
