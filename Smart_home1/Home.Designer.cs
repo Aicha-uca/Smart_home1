@@ -30,6 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Home));
             this.guna2ShadowPanel1 = new Guna.UI2.WinForms.Guna2ShadowPanel();
+            this.Ajouter = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.logout = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.clima = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.lampe = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.TV = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.Refrigirateur = new Guna.UI2.WinForms.Guna2ImageButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -43,12 +49,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.Refrigirateur = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.TV = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.lampe = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.clima = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.logout = new Guna.UI2.WinForms.Guna2ImageButton();
-            this.Ajouter = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox2 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.guna2PictureBox3 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2ShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -56,11 +59,17 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2ShadowPanel1
             // 
             this.guna2ShadowPanel1.BackColor = System.Drawing.Color.Salmon;
+            this.guna2ShadowPanel1.Controls.Add(this.guna2PictureBox3);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2PictureBox2);
+            this.guna2ShadowPanel1.Controls.Add(this.guna2PictureBox1);
             this.guna2ShadowPanel1.Controls.Add(this.Ajouter);
             this.guna2ShadowPanel1.Controls.Add(this.logout);
             this.guna2ShadowPanel1.Controls.Add(this.clima);
@@ -73,6 +82,99 @@
             this.guna2ShadowPanel1.ShadowColor = System.Drawing.Color.Black;
             this.guna2ShadowPanel1.Size = new System.Drawing.Size(169, 545);
             this.guna2ShadowPanel1.TabIndex = 1;
+            // 
+            // Ajouter
+            // 
+            this.Ajouter.BackColor = System.Drawing.Color.Transparent;
+            this.Ajouter.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.Ajouter.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.Ajouter.Image = ((System.Drawing.Image)(resources.GetObject("Ajouter.Image")));
+            this.Ajouter.ImageOffset = new System.Drawing.Point(0, 0);
+            this.Ajouter.ImageRotate = 0F;
+            this.Ajouter.ImageSize = new System.Drawing.Size(35, 35);
+            this.Ajouter.Location = new System.Drawing.Point(95, 423);
+            this.Ajouter.Name = "Ajouter";
+            this.Ajouter.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.Ajouter.Size = new System.Drawing.Size(30, 32);
+            this.Ajouter.TabIndex = 19;
+            this.Ajouter.Click += new System.EventHandler(this.Ajouter_Click);
+            // 
+            // logout
+            // 
+            this.logout.BackColor = System.Drawing.Color.Transparent;
+            this.logout.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.logout.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.logout.Image = ((System.Drawing.Image)(resources.GetObject("logout.Image")));
+            this.logout.ImageOffset = new System.Drawing.Point(0, 0);
+            this.logout.ImageRotate = 0F;
+            this.logout.ImageSize = new System.Drawing.Size(20, 20);
+            this.logout.Location = new System.Drawing.Point(95, 485);
+            this.logout.Name = "logout";
+            this.logout.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.logout.Size = new System.Drawing.Size(31, 35);
+            this.logout.TabIndex = 19;
+            this.logout.Click += new System.EventHandler(this.logout_Click);
+            // 
+            // clima
+            // 
+            this.clima.BackColor = System.Drawing.Color.Transparent;
+            this.clima.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.clima.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.clima.Image = ((System.Drawing.Image)(resources.GetObject("clima.Image")));
+            this.clima.ImageOffset = new System.Drawing.Point(0, 0);
+            this.clima.ImageRotate = 0F;
+            this.clima.ImageSize = new System.Drawing.Size(30, 30);
+            this.clima.Location = new System.Drawing.Point(95, 158);
+            this.clima.Name = "clima";
+            this.clima.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.clima.Size = new System.Drawing.Size(30, 35);
+            this.clima.TabIndex = 19;
+            this.clima.Click += new System.EventHandler(this.clima_Click);
+            // 
+            // lampe
+            // 
+            this.lampe.BackColor = System.Drawing.Color.Transparent;
+            this.lampe.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.lampe.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.lampe.Image = ((System.Drawing.Image)(resources.GetObject("lampe.Image")));
+            this.lampe.ImageOffset = new System.Drawing.Point(0, 0);
+            this.lampe.ImageRotate = 0F;
+            this.lampe.ImageSize = new System.Drawing.Size(35, 35);
+            this.lampe.Location = new System.Drawing.Point(95, 114);
+            this.lampe.Name = "lampe";
+            this.lampe.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.lampe.Size = new System.Drawing.Size(29, 38);
+            this.lampe.TabIndex = 19;
+            // 
+            // TV
+            // 
+            this.TV.BackColor = System.Drawing.Color.Transparent;
+            this.TV.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.TV.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.TV.Image = ((System.Drawing.Image)(resources.GetObject("TV.Image")));
+            this.TV.ImageOffset = new System.Drawing.Point(0, 0);
+            this.TV.ImageRotate = 0F;
+            this.TV.ImageSize = new System.Drawing.Size(40, 40);
+            this.TV.Location = new System.Drawing.Point(81, 69);
+            this.TV.Name = "TV";
+            this.TV.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.TV.Size = new System.Drawing.Size(56, 39);
+            this.TV.TabIndex = 19;
+            // 
+            // Refrigirateur
+            // 
+            this.Refrigirateur.BackColor = System.Drawing.Color.Transparent;
+            this.Refrigirateur.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.Refrigirateur.HoverState.ImageSize = new System.Drawing.Size(64, 64);
+            this.Refrigirateur.Image = ((System.Drawing.Image)(resources.GetObject("Refrigirateur.Image")));
+            this.Refrigirateur.ImageOffset = new System.Drawing.Point(0, 0);
+            this.Refrigirateur.ImageRotate = 0F;
+            this.Refrigirateur.ImageSize = new System.Drawing.Size(35, 35);
+            this.Refrigirateur.Location = new System.Drawing.Point(95, 25);
+            this.Refrigirateur.Name = "Refrigirateur";
+            this.Refrigirateur.PressedState.ImageSize = new System.Drawing.Size(64, 64);
+            this.Refrigirateur.Size = new System.Drawing.Size(29, 38);
+            this.Refrigirateur.TabIndex = 19;
             // 
             // pictureBox1
             // 
@@ -198,91 +300,42 @@
             this.label6.TabIndex = 18;
             this.label6.Text = "balcony";
             // 
-            // Refrigirateur
+            // guna2PictureBox1
             // 
-            this.Refrigirateur.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.Refrigirateur.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.Refrigirateur.Image = ((System.Drawing.Image)(resources.GetObject("Refrigirateur.Image")));
-            this.Refrigirateur.ImageOffset = new System.Drawing.Point(0, 0);
-            this.Refrigirateur.ImageRotate = 0F;
-            this.Refrigirateur.ImageSize = new System.Drawing.Size(35, 35);
-            this.Refrigirateur.Location = new System.Drawing.Point(95, 25);
-            this.Refrigirateur.Name = "Refrigirateur";
-            this.Refrigirateur.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.Refrigirateur.Size = new System.Drawing.Size(29, 38);
-            this.Refrigirateur.TabIndex = 19;
+            this.guna2PictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(96, 263);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(31, 24);
+            this.guna2PictureBox1.TabIndex = 20;
+            this.guna2PictureBox1.TabStop = false;
+            this.guna2PictureBox1.UseTransparentBackground = true;
             // 
-            // TV
+            // guna2PictureBox2
             // 
-            this.TV.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.TV.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.TV.Image = ((System.Drawing.Image)(resources.GetObject("TV.Image")));
-            this.TV.ImageOffset = new System.Drawing.Point(0, 0);
-            this.TV.ImageRotate = 0F;
-            this.TV.ImageSize = new System.Drawing.Size(40, 40);
-            this.TV.Location = new System.Drawing.Point(95, 69);
-            this.TV.Name = "TV";
-            this.TV.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.TV.Size = new System.Drawing.Size(29, 39);
-            this.TV.TabIndex = 19;
+            this.guna2PictureBox2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox2.Image")));
+            this.guna2PictureBox2.ImageRotate = 0F;
+            this.guna2PictureBox2.Location = new System.Drawing.Point(83, 199);
+            this.guna2PictureBox2.Name = "guna2PictureBox2";
+            this.guna2PictureBox2.Size = new System.Drawing.Size(54, 50);
+            this.guna2PictureBox2.TabIndex = 21;
+            this.guna2PictureBox2.TabStop = false;
+            this.guna2PictureBox2.UseTransparentBackground = true;
+            this.guna2PictureBox2.Click += new System.EventHandler(this.guna2PictureBox2_Click);
             // 
-            // lampe
+            // guna2PictureBox3
             // 
-            this.lampe.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.lampe.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.lampe.Image = ((System.Drawing.Image)(resources.GetObject("lampe.Image")));
-            this.lampe.ImageOffset = new System.Drawing.Point(0, 0);
-            this.lampe.ImageRotate = 0F;
-            this.lampe.ImageSize = new System.Drawing.Size(35, 35);
-            this.lampe.Location = new System.Drawing.Point(95, 114);
-            this.lampe.Name = "lampe";
-            this.lampe.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.lampe.Size = new System.Drawing.Size(29, 38);
-            this.lampe.TabIndex = 19;
-            // 
-            // clima
-            // 
-            this.clima.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.clima.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.clima.Image = ((System.Drawing.Image)(resources.GetObject("clima.Image")));
-            this.clima.ImageOffset = new System.Drawing.Point(0, 0);
-            this.clima.ImageRotate = 0F;
-            this.clima.ImageSize = new System.Drawing.Size(30, 30);
-            this.clima.Location = new System.Drawing.Point(95, 158);
-            this.clima.Name = "clima";
-            this.clima.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.clima.Size = new System.Drawing.Size(30, 35);
-            this.clima.TabIndex = 19;
-            // 
-            // logout
-            // 
-            this.logout.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.logout.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.logout.Image = ((System.Drawing.Image)(resources.GetObject("logout.Image")));
-            this.logout.ImageOffset = new System.Drawing.Point(0, 0);
-            this.logout.ImageRotate = 0F;
-            this.logout.ImageSize = new System.Drawing.Size(20, 20);
-            this.logout.Location = new System.Drawing.Point(95, 485);
-            this.logout.Name = "logout";
-            this.logout.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.logout.Size = new System.Drawing.Size(31, 35);
-            this.logout.TabIndex = 19;
-            this.logout.Click += new System.EventHandler(this.logout_Click);
-            // 
-            // Ajouter
-            // 
-            this.Ajouter.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.Ajouter.HoverState.ImageSize = new System.Drawing.Size(64, 64);
-            this.Ajouter.Image = ((System.Drawing.Image)(resources.GetObject("Ajouter.Image")));
-            this.Ajouter.ImageOffset = new System.Drawing.Point(0, 0);
-            this.Ajouter.ImageRotate = 0F;
-            this.Ajouter.ImageSize = new System.Drawing.Size(35, 35);
-            this.Ajouter.Location = new System.Drawing.Point(95, 423);
-            this.Ajouter.Name = "Ajouter";
-            this.Ajouter.PressedState.ImageSize = new System.Drawing.Size(64, 64);
-            this.Ajouter.Size = new System.Drawing.Size(30, 32);
-            this.Ajouter.TabIndex = 19;
-            this.Ajouter.Click += new System.EventHandler(this.Ajouter_Click);
+            this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2PictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox3.Image")));
+            this.guna2PictureBox3.ImageRotate = 0F;
+            this.guna2PictureBox3.Location = new System.Drawing.Point(93, 293);
+            this.guna2PictureBox3.Name = "guna2PictureBox3";
+            this.guna2PictureBox3.Size = new System.Drawing.Size(44, 51);
+            this.guna2PictureBox3.TabIndex = 22;
+            this.guna2PictureBox3.TabStop = false;
+            this.guna2PictureBox3.UseTransparentBackground = true;
             // 
             // Home
             // 
@@ -306,7 +359,9 @@
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.guna2ShadowPanel1);
             this.DoubleBuffered = true;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Home";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Home";
             this.Load += new System.EventHandler(this.Home_Load);
             this.guna2ShadowPanel1.ResumeLayout(false);
@@ -316,6 +371,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -343,5 +401,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox2;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
+        private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox3;
     }
 }

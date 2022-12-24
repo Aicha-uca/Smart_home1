@@ -44,7 +44,17 @@ namespace Smart_home1
 
         private void Ajouter_Click(object sender, EventArgs e)
         {
-            
+            pictureBox1.ImageLocation = "http://i.imgur.com/7ikw7ye.png";
+        }
+
+        private void clima_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

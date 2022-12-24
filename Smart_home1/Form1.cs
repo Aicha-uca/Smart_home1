@@ -70,12 +70,27 @@ namespace Smart_home1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Login();
+            
         }
 
     
 
         private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+            Login();
+        }
+
+        private void guna2ControlBox1_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
         {
 
         }
