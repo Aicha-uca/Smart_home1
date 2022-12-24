@@ -36,7 +36,7 @@ namespace Smart_home1
                 if(reader.HasRows){
                     while (reader.Read())
                     {
-                        MessageBox.Show("Login to Home");                    }
+                                          }
                 Home form2 = new Home();
                 form2.Show();
                 this.Hide();
@@ -91,6 +91,11 @@ namespace Smart_home1
         }
 
         private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2ShadowPanel1_Paint(object sender, PaintEventArgs e)
         {
 
         }
