@@ -1,4 +1,5 @@
 ﻿using Guna.UI2.WinForms;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace Smart_home1
 {
@@ -16,6 +18,7 @@ namespace Smart_home1
         public Home()
         {
             InitializeComponent();
+            ComboBox_Load();
         }
 
         private void Home_Load(object sender, EventArgs e)
@@ -237,6 +240,70 @@ namespace Smart_home1
             pictureBox4.Image = getPicture;
         }
 
-        
+        private void guna2PictureBox7_Click(object sender, EventArgs e)
+        {
+            
+        }
+    
+
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2PictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ComboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void TV_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            
+           
+                
+        }
+        private void ComboBox_Load()
+        {
+            List<Zone> list;
+            list = new List<Zone>();
+            try
+            {
+                string sql = "datasource=localhost;port=3306;username=root;password=;database=smart8home";
+                MySqlConnection conn = new MySqlConnection(sql);
+
+                string selectQuery = "SELECT * FROM zone";
+                conn.Open();
+                MySqlCommand command = new MySqlCommand(selectQuery, conn);
+                MySqlDataReader reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    list.Add(new Zone(Int32.Parse(reader.GetString("id")), reader.GetString("libelle")));
+                    comboBox1.Items.Add(reader.GetString("libelle"));
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void lampe_Click(object sender, EventArgs e)
+        {
+            lampes l = new lampes();
+            l.Show();
+            this.Hide();
+        }
     }
-}
+    }
+
