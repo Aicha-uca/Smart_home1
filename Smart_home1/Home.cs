@@ -66,7 +66,9 @@ namespace Smart_home1
 
         private void clima_Click(object sender, EventArgs e)
         {
-
+            Climas c = new Climas();
+            c.Show();
+            this.Hide();
         }
 
         private void guna2PictureBox2_Click(object sender, EventArgs e)
